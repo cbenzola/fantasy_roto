@@ -1,0 +1,319 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/style.css?version=1" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../scripts/search-home.js"></script>
+
+
+
+
+
+  <title>News</title>
+
+</head>
+<div class="wrapper">
+	<div class="header-container">
+		<header class="header">
+			<div class="top-header">
+				<div id="rightLogo">
+
+
+					<form action="" method="post" id="player-search">
+						<button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
+						<div class="search-box">
+
+							<input type="text" id="searchbar" autocomplete="off" placeholder="Search Player...">
+
+							<div class="result">
+							</div>
+						</div>
+					</form>
+
+					<form action="" method="post" id="position-search" style="display: none;">
+						<button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
+
+						<div class="search-box">
+
+							<input type="text" id="searchbar" autocomplete="off" placeholder="Search Pitcher...">
+
+							<div class="result">
+							</div>
+						</div>
+
+
+					</form>
+
+				</div>
+				<div class="leftLogo">
+					<a href="index.html" target="_top">
+						<div class="leftLogo-img">
+							<img src="../image/miami.png" id="miami_logo" class="img">
+						</div>
+					</a>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../index.html">Fantasy Roto</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="leaders.html">Leaders </a>
+
+							</li>
+							<li><a href="newOpt2.php">Lineup Builder </a>
+
+							</li>
+
+							<li><a href="diamond.html">The Diamond</a></li>
+							<li><a href="hall.php">Hall Of Fame</a></li>
+						</ul>
+
+
+						<ul class="nav navbar-nav navbar-right">
+
+							<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</header>
+	</div>
+
+
+</div>
+<body>
+
+
+
+  <div class="wrapper">
+
+    <div id="leader_name">
+      <h1>MLB Hall Of Fame Inductees</h1>
+    </div>
+    <table id="hall">
+      <tbody>
+        <tr id="header" style="">
+          <th>Name</th>
+          <th>Year</th>
+          <th>Votes</th>
+          <th>Ballots</th>
+          <th>Vote %</th>
+        </tr>
+        <tr>
+          <td class="hall_style">Chipper Jones</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style">410</td>
+          <td class="hall_style">422</td>
+          <td class="hall_style">97.2</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Trevor Hoffman</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style">337</td>
+          <td class="hall_style">422</td>
+          <td class="hall_style">79.9</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Jim Thome</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style">379</td>
+          <td class="hall_style">422</td>
+          <td class="hall_style">89.8</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Jack Morris</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Alan Trammell</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Vladimir Guerrero</td>
+          <td class="hall_style">2018</td>
+          <td class="hall_style">392</td>
+          <td class="hall_style">422</td>
+          <td class="hall_style">92.9</td>
+        </tr>
+        <tr>
+          <td class="hall_style">John Schuerholz</td>
+          <td class="hall_style">2017</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Tim Raines</td>
+          <td class="hall_style">2017</td>
+          <td class="hall_style">380</td>
+          <td class="hall_style">442</td>
+          <td class="hall_style">86.0</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Jeff Bagwell</td>
+          <td class="hall_style">2017</td>
+          <td class="hall_style">381</td>
+          <td class="hall_style">442</td>
+          <td class="hall_style">86.2</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Bud Selig</td>
+          <td class="hall_style">2017</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Ivan Rodriguez</td>
+          <td class="hall_style">2017</td>
+          <td class="hall_style">336</td>
+          <td class="hall_style">442</td>
+          <td class="hall_style">76.0</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Ken Griffey</td>
+          <td class="hall_style">2016</td>
+          <td class="hall_style">437</td>
+          <td class="hall_style">440</td>
+          <td class="hall_style">99.3</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Mike Piazza</td>
+          <td class="hall_style">2016</td>
+          <td class="hall_style">365</td>
+          <td class="hall_style">440</td>
+          <td class="hall_style">83.0</td>
+        </tr>
+        <tr>
+          <td class="hall_style">John Smoltz</td>
+          <td class="hall_style">2015</td>
+          <td class="hall_style">455</td>
+          <td class="hall_style">549</td>
+          <td class="hall_style">82.9</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Pedro Martinez</td>
+          <td class="hall_style">2015</td>
+          <td class="hall_style">500</td>
+          <td class="hall_style">549</td>
+          <td class="hall_style">91.1</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Craig Biggio</td>
+          <td class="hall_style">2015</td>
+          <td class="hall_style">454</td>
+          <td class="hall_style">549</td>
+          <td class="hall_style">82.7</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Randy Johnson</td>
+          <td class="hall_style">2015</td>
+          <td class="hall_style">534</td>
+          <td class="hall_style">549</td>
+          <td class="hall_style">97.3</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Greg Maddux</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style">555</td>
+          <td class="hall_style">571</td>
+          <td class="hall_style">97.2</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Joe Torre</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Frank Thomas</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style">478</td>
+          <td class="hall_style">571</td>
+          <td class="hall_style">83.7</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Tom Glavine</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style">525</td>
+          <td class="hall_style">571</td>
+          <td class="hall_style">91.9</td>
+        </tr>
+        <tr>
+          <td class="hall_style">Bobby Cox</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Tony LaRussa</td>
+          <td class="hall_style">2014</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+        <tr>
+          <td class="hall_style">Deacon White</td>
+          <td class="hall_style">2013</td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+          <td class="hall_style"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
+    <hr>
+    <footer class="footer">
+      @chrisbenzola
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

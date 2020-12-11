@@ -1,0 +1,178 @@
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/style.css?version=1" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="../scripts/search-home.js"></script>
+
+
+
+	<title>About Us</title>
+
+</head>
+
+
+<div class="wrapper">
+	<div class="header-container">
+		<header>
+			<div class="top-header">
+				<div id="rightLogo">
+
+
+					<form action="" method="post" id="player-search">
+						<button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
+						<div class="search-box">
+
+							<input type="text" id="searchbar" autocomplete="off" placeholder="Search Player...">
+
+							<div class="result">
+							</div>
+						</div>
+					</form>
+
+					<form action="" method="post" id="position-search" style="display: none;">
+						<button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
+
+						<div class="search-box">
+
+							<input type="text" id="searchbar" autocomplete="off" placeholder="Search Pitcher...">
+
+							<div class="result">
+							</div>
+						</div>
+
+
+					</form>
+
+				</div>
+				<div class="leftLogo">
+					<a href="../index.html" target="_top">
+						<div class="leftLogo-img">
+							<img src="../image/miami.png" id="miami_logo">
+						</div>
+					</a>
+
+				</div>
+			</div>
+
+
+
+
+
+
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../index.html">Fantasy Roto</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="leaders.html">Leaders </a>
+
+							</li>
+							<li><a href="newOpt2.html">Lineup Builder </a>
+
+							</li>
+							<li><a href="diamond.html">The Diamond</a></li>
+							<li><a href="hall.html">Hall Of Fame</a></li>
+						</ul>
+
+
+						<ul class="nav navbar-nav navbar-right">
+
+							<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</header>
+	</div>
+
+
+</div>
+<body>
+
+
+
+
+	<div class="wrapper_home ">
+
+		<div class="about-section">
+
+		  <h1>Welcome to FantasyRoto.com </h1>
+		  <p>Our mission is to help fantasy baseball users research player's statistics
+				and help them make informed descions on who to start in their lineup. Please leave comments below for questions or feedback.
+Thank you, and hope you enjoy exploring the site.
+			 </p>
+			 <h2>References</h2>
+			 <p>
+				 Baseballreference.com
+				 <br />
+ Baseballsavant.com
+ <br />
+ Mlb.com
+ <br />
+ Fanduel.com
+ <br />
+ W3schools.com
+
+			 </p>
+		</div>
+
+
+<div class="col-md-8 comment2">
+	<div id="respond">
+
+	  <h3>Leave a Comment</h3>
+
+	  <form action="post_comment.php" method="post" id="commentform">
+
+	    <label for="comment_author" class="required">Name</label>
+	    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+	    <label for="email" class="required">Email</label>
+	    <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+
+	    <label for="comment" class="required">Comment</label>
+	    <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+
+
+	    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+	    <input name="submit" class="comment" type="submit" value="Submit" />
+
+	  </form>
+
+	</div>
+</div>
+
+
+
+
+		<footer class="footer">
+			@chrisbenzola
+		</footer>
+
+</div>
+
+	<script src="scripts/subScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<html>
+
+<head>
+
+  <meta name="viewport" content="initial-scale=1.0">
+  <link href="../css/style.css?version=1" rel="stylesheet" type="text/css">
+  <link href="../css/fanduel.css?version=1" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css?version=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="../scripts/search.js"> </script>
+
+
+  <title>Optimizer</title>
+
+
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header-container">
+      <header>
+        <div class="top-header">
+          <div id="rightLogo">
+
+
+            <form action="" method="post" id="player-search">
+
+              <div class="search-box">
+
+                <input type="text" id="searchbar" autocomplete="off" placeholder="Search Player...">
+
+                <div class="result">
+                </div>
+              </div>
+              <button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
+            </form>
+          </div>
+          <div class="leftLogo">
+            <a href="../index.html" target="_top">
+              <div class="leftLogo-img">
+                <img src="../image/miami.png" id="miami_logo" class="img">
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <nav class="navbar navbar-inverse ">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Fantasy Roto</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us </a>
+                </li>
+                <li><a href="news.html">News </a>
+                </li>
+                <li><a href="leaders.html">Leaders </a>
+
+                </li>
+                <li><a href="newOpt2.html">Lineup Builder </a>
+
+                </li>
+
+                <li><a href="diamond.html">The Diamond</a></li>
+                <li><a href="hall.html">Hall Of Fame</a></li>
+              </ul>
+
+
+              <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="wrapper">
+
+    <div id="instructions">
+      <h4>Step 1: Login:Press Clear<br>Step 2: Select one P,C,1B,2B,3B,SS and three OF
+        <br>Step 3: Press Save<br>
+        Step 4: Press Optimize</h4>
+    </div>
+    <div class="wrapper_lineup">
+      <div class="row">
+
+        <div class="table_head">
+          <h3>Players</h3>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="column col-lg-6">
+
+            <form id="getPlayer" action="" method="post" name="getPlayer1">
+
+              <br>
+              <figure class="table_head"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Position" title="Search Player"></figure>
+              <table id="table1" class="mytable">
+                <thead>
+                  <tr class="table1">
+                    <th>
+                      <div>Pos</div>
+                    </th>
+                    <th>Name</th>
+                    <th>FPPG</th>
+                    <th>Salary</th>
+                    <th>Game</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="tbody1" class="connectedSortable">
+                  <tr>
+                    <td colspan="6">
+                      <div class="scroll">
+                        <table id="fake">
+                          <tbody>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Shane Bieber<input type="hidden" name="player[]" id="player" value="Shane Bieber"></td>
+                              <td>64.67<input type="hidden" name="fppg[]" id="fppg" value="64.67"></td>
+                              <td>11700<input type="hidden" name="sal[]" id="sal" value="11700"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="11700"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Trevor Bauer<input type="hidden" name="player[]" id="player" value="Trevor Bauer"></td>
+                              <td>55.50<input type="hidden" name="fppg[]" id="fppg" value="55.50"></td>
+                              <td>11200<input type="hidden" name="sal[]" id="sal" value="11200"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="11200"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Justin Verlander<input type="hidden" name="player[]" id="player" value="Justin Verlander"></td>
+                              <td>43.00<input type="hidden" name="fppg[]" id="fppg" value="43.00"></td>
+                              <td>11200<input type="hidden" name="sal[]" id="sal" value="11200"></td>
+                              <td>HOU@ARI<input type="hidden" name="game[]" id="game" value="HOU@ARI"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="11200"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Sonny Gray<input type="hidden" name="player[]" id="player" value="Sonny Gray"></td>
+                              <td>54.67<input type="hidden" name="fppg[]" id="fppg" value="54.67"></td>
+                              <td>10500<input type="hidden" name="sal[]" id="sal" value="10500"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="10500"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Clayton Kershaw<input type="hidden" name="player[]" id="player" value="Clayton Kershaw"></td>
+                              <td>41.00<input type="hidden" name="fppg[]" id="fppg" value="41.00"></td>
+                              <td>10100<input type="hidden" name="sal[]" id="sal" value="10100"></td>
+                              <td>LOS@SDP<input type="hidden" name="game[]" id="game" value="LOS@SDP"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="10100"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Walker Buehler<input type="hidden" name="player[]" id="player" value="Walker Buehler"></td>
+                              <td>14.50<input type="hidden" name="fppg[]" id="fppg" value="14.50"></td>
+                              <td>10000<input type="hidden" name="sal[]" id="sal" value="10000"></td>
+                              <td>LOS@SDP<input type="hidden" name="game[]" id="game" value="LOS@SDP"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="10000"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Luis Castillo<input type="hidden" name="player[]" id="player" value="Luis Castillo"></td>
+                              <td>36.50<input type="hidden" name="fppg[]" id="fppg" value="36.50"></td>
+                              <td>9900<input type="hidden" name="sal[]" id="sal" value="9900"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="9900"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Mike Clevinger<input type="hidden" name="player[]" id="player" value="Mike Clevinger"></td>
+                              <td>26.00<input type="hidden" name="fppg[]" id="fppg" value="26.00"></td>
+                              <td>9600<input type="hidden" name="sal[]" id="sal" value="9600"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="9600"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Yu Darvish<input type="hidden" name="player[]" id="player" value="Yu Darvish"></td>
+                              <td>33.50<input type="hidden" name="fppg[]" id="fppg" value="33.50"></td>
+                              <td>9500<input type="hidden" name="sal[]" id="sal" value="9500"></td>
+                              <td>CHC@KAN<input type="hidden" name="game[]" id="game" value="CHC@KAN"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="9500"></td>
+                            </tr>
+                            <tr>
+                              <td>P<input type="hidden" name="pos[]" id="pos" value="P"></td>
+                              <td>Carlos Carrasco<input type="hidden" name="player[]" id="player" value="Carlos Carrasco"></td>
+                              <td>40.00<input type="hidden" name="fppg[]" id="fppg" value="40.00"></td>
+                              <td>9400<input type="hidden" name="sal[]" id="sal" value="9400"></td>
+                              <td>CIN@CLE<input type="hidden" name="game[]" id="game" value="CIN@CLE"></td>
+                              <td> <input type="checkbox" name="salary" id="toggle" class="checkmark checkbox" value="9400"></td>
+                            </tr>
+                            <tr>
+
+                </tbody>
+              </table>
+            </td>
+           							</tr>
+           						</tbody>
+           						</table>
+            </form>
+          </div>
+          <div class="column col-lg-6">
+
+
+            <form id="playerForm" name="getPlayer2" method="post">
+              <div class="row">
+
+
+
+                <figure id="dollar">
+                  <figcaption>
+                    <div class="max">Salary Remaining:</div>
+                    <div class="dollar">
+
+                      <input name="calc" type="number" lang="en-150" class="salary_count good" id="salary_total" max="35000" value="35000">
+
+
+
+                      <input type="hidden" name="userName" value="">
+                      <input name="calc2[]" type="hidden" value="500">
+
+
+                    </div>
+
+                  </figcaption>
+                </figure>
+
+              </div>
+              <table id="table2" class="mytable">
+
+
+
+
+                <caption align="bottom">
+
+                  <figcaption>
+
+                    <input name="playerOpt" type="button" disabled="disabled" class="optimize_lock" id="optimizeButton" value="Optimize" action="">
+                    <input type="button" class="optimize_btn" id="reset" value="Clear">
+                    <button type="button" id="csv" class="optimize_btn">Export</button>
+
+                    <button type="button" name="saved" id="save" class="optimize_btn">Save</button>
+
+                  </figcaption>
+
+
+
+                </caption>
+
+
+                <thead>
+
+                  <tr class="table2">
+
+                    <th>Position</th>
+                    <th> Name</th>
+                    <th>FPPG</th>
+                    <th>Salary</th>
+                    <th>Game</th>
+
+
+                    <th></th>
+                  </tr>
+
+                </thead>
+
+                <tbody id="tbody2" class="connectedSortable">
+
+                </tbody>
+
+
+
+              </table>
+            </form>
+            <div id="load">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top:5px;">
+      <footer class="footer">
+        @chrisbenzola
+      </footer>
+
+    </div>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="../scripts/table2CSV.js"></script>
+
+    <script src="../scripts/optimizer.js"></script>
+
+    <script src="../scripts/jquery-sortable.js"></script>
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table1");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+
+
+  </div>
+  
+</body>
+
+</html>
