@@ -1,87 +1,93 @@
 <html>
+
 <head>
- <meta name="viewport" content="initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1.0">
   <link href="../css/style.css?version=1" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css?version=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="../scripts/search.js"> </script>
+  <script src="../scripts/search.js"> </script>
 
 
 
 
 
 
-	<title>The Diamond</title>
-	</head>
+  <title>The Diamond</title>
+</head>
 
 
 
-   <body><div class="wrapper">
-  	<div class="header-container">
-  	 <header>
-  		<div class="top-header">
-  			<div id="rightLogo">
+<body>
+  <div class="wrapper">
+    <div class="header-container">
+      <header>
+        <div class="top-header">
+          <div id="rightLogo">
 
 
-  <form action="" method="post" id="player-search">
+            <form action="" method="post" id="player-search">
 
-  	<div class="search-box">
+              <div class="search-box">
 
-  				<input type="text" id="searchbar" autocomplete="off" placeholder="Search Player...">
+                <input type="text" id="searchbar" autocomplete="off" placeholder="Search Player...">
 
-  				<div class="result">
-  						</div>
-  	</div>
-  		<button type="submit" id="search_button" class="btn btn-info btn-md"><span class="glyphicon glyphicon-search"></span> Submit</button>
-	</form>
-		</div>
-  			<div class="leftLogo">
-  				<a href="../index.html" target="_top">
-  					<div class="leftLogo-img">
-  						<img src="../image/miami.png" id="miami_logo" class="img">
-  		  </div></a>
+                <div class="result">
+                </div>
+              </div>
+              <button type="submit" id="search_button" class="btn btn-info btn-md"><span
+                  class="glyphicon glyphicon-search"></span> Submit</button>
+            </form>
+          </div>
+          <div class="leftLogo">
+            <a href="../index.html" target="_top">
+              <div class="leftLogo-img">
+                <img src="../image/miami.png" id="miami_logo" class="img">
+              </div>
+            </a>
 
-  	   </div>
-  		 </div>
-     <nav class="navbar navbar-inverse ">
-    <div class="container-fluid">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">Fantasy Roto</a>
-      </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About Us </a>
-        </li><li><a href="news.html">News </a>
-        </li><li><a href="leaders.html">Leaders </a>
-
-        </li>
-  		<li><a href="newOpt2.html">Lineup Builder </a>
-
-        </li>
-
-        <li><a href="diamond.html">The Diamond</a></li>
-      <li><a href="hall.html">Hall Of Fame</a></li>
-      </ul>
-
-
-      <ul class="nav navbar-nav navbar-right">
-
-  		<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+          </div>
         </div>
-  	   </div>
-  	   </nav>
-  		 </header>
-  		 </div>
+        <nav class="navbar navbar-inverse ">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Fantasy Roto</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us </a>
+                </li>
+                <li><a href="news.html">News </a>
+                </li>
+                <li><a href="leaders.html">Leaders </a>
+
+                </li>
+                <li><a href="newOpt2.html">Lineup Builder </a>
+
+                </li>
+
+                <li><a href="diamond.html">The Diamond</a></li>
+                <li><a href="hall.html">Hall Of Fame</a></li>
+              </ul>
+
+
+              <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
 
 
   </div>
@@ -91,63 +97,82 @@
 
 
 
-	<div id="drag" style="background-color:#fff;">
+  <div id="drag" style="background-color:#fff;">
 
-	<div class="col-md-4" id="player_column">  <br>
- <div style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move" align="center">
+    <div class="col-md-4" id="player_column"> <br>
+      <div
+        style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move"
+        align="center">
 
-						 <img src="../image/trout_head.jpg" data-id="1" ,="" data-year="2019" data-name="Mike Trout" data-team="Angels" data-hits="15" data-doubles="2" data-triples="0" data-homeruns="6" data-spray_chart="../image/trout_Chart.png" data-field_chart="../image/trout_field.png" class="img-responsive player_drag">
-
-
-						 <h4 class="text-info">Mike Trout</h4>
-
-                     </div>
-                </div>
-
-	<div id="drag" style="background-color:#fff;">
-
-	<div class="col-md-4" id="player_column">  <br>
- <div style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move" align="center">
-
-						 <img src="../image/judge.png" data-id="2" ,="" data-year="2019" data-name="Aaron Judge" data-team="Yankees" data-hits="17" data-doubles="1" data-triples="0" data-homeruns="4" data-spray_chart="../image/judge_chart.png" data-field_chart="../image/judge_field.png" class="img-responsive player_drag">
+        <img src="../image/trout_head.jpg" data-id="1" ,="" data-year="2019" data-name="Mike Trout" data-team="Angels"
+          data-hits="15" data-doubles="2" data-triples="0" data-homeruns="6" data-spray_chart="../image/trout_Chart.png"
+          data-field_chart="../image/trout_field.png" class="img-responsive player_drag">
 
 
-						 <h4 class="text-info">Aaron Judge</h4>
+        <h4 class="text-info">Mike Trout</h4>
 
-                     </div>
-                </div>
+      </div>
+    </div>
 
-	<div id="drag" style="background-color:#fff;">
+    <div id="drag" style="background-color:#fff;">
 
-	<div class="col-md-4" id="player_column">  <br>
- <div style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move" align="center">
+      <div class="col-md-4" id="player_column"> <br>
+        <div
+          style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move"
+          align="center">
 
-						 <img src="../image/mookie_head.jpg" data-id="3" ,="" data-year="2019" data-name="Mookie Betts" data-team="Red Sox" data-hits="17" data-doubles="1" data-triples="0" data-homeruns="4" data-spray_chart="../image/mookie_chart.png" data-field_chart="../image/betts_field.png" class="img-responsive player_drag">
-
-
-						 <h4 class="text-info">Mookie Betts</h4>
-
-                     </div>
-                </div>
-
-	<div style="clear:both"></div>
-                <br>
-                <div align="center">
-                     <div class="drag_area">Drop Player Here</div>
-                </div>
-                <div id="dragable_player">
+          <img src="../image/judge.png" data-id="2" ,="" data-year="2019" data-name="Aaron Judge" data-team="Yankees"
+            data-hits="17" data-doubles="1" data-triples="0" data-homeruns="4"
+            data-spray_chart="../image/judge_chart.png" data-field_chart="../image/judge_field.png"
+            class="img-responsive player_drag">
 
 
-           <br> <br>
-	</div>
-	</div>
+          <h4 class="text-info">Aaron Judge</h4>
+
+        </div>
+      </div>
+
+      <div id="drag" style="background-color:#fff;">
+
+        <div class="col-md-4" id="player_column"> <br>
+          <div
+            style="border:1px solid #333; background-color:#fff; width:200px; border-radius:5px; padding:10px; cursor:move"
+            align="center">
+
+            <img src="../image/mookie_head.jpg" data-id="3" ,="" data-year="2019" data-name="Mookie Betts"
+              data-team="Red Sox" data-hits="17" data-doubles="1" data-triples="0" data-homeruns="4"
+              data-spray_chart="../image/mookie_chart.png" data-field_chart="../image/betts_field.png"
+              class="img-responsive player_drag">
 
 
-	  <hr style="margin-top:5px;">
-  <footer class="footer">
-    @chrisbenzola
-   </footer>
-	<script src="../scripts/drop.js"></script>
+            <h4 class="text-info">Mookie Betts</h4>
+
+          </div>
+        </div>
+
+        <div style="clear:both"></div>
+        <br>
+        <div align="center">
+          <div class="drag_area">Drop Player Here</div>
+        </div>
+        <div id="dragable_player">
 
 
-</div></div><div id="fpCE_version" style="display:none">8.5.5</div></body></html>
+          <br> <br>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:5px;">
+      <footer class="footer">
+        @chrisbenzola
+      </footer>
+      <script src="../scripts/drop.js"></script>
+
+
+    </div>
+  </div>
+  <div id="fpCE_version" style="display:none">8.5.5</div>
+</body>
+
+</html>
