@@ -38,7 +38,7 @@ include('../functions.php');
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <a href="#"> <img src="../image/trout-mi.jpg" id="mike"></a>
+                            <a href="#"> <img src="../image/trout-mi.min.jpg" id="mike"></a>
                             <div class="carousel-caption">
 
                                 <h2>Mike Trout Looks To Get Angels Back To Playoffs?</h3>
@@ -46,7 +46,7 @@ include('../functions.php');
                         </div>
 
                         <div class="item">
-                            <a href="#"><img src="../image/yankees.png" id="yankees"></a>
+                            <a href="#"><img src="../image/yankees.min.png" id="yankees"></a>
                             <div class="carousel-caption">
 
                                 <h2>Yankees Eye 2021 World Series</h3>
@@ -100,7 +100,7 @@ include('../functions.php');
                 <div id="articles" class="col-md-8">
                     <div class="article">
                         <a href="#" class="article_image">
-                            <img class="article_img" src="../image/trout_swing.jpg">
+                            <img class="article_img" src="../image/trout_swing.min.jpg">
                         </a>
                         <div class="article_main">
                             <a class="article_link" href="#">
@@ -113,7 +113,7 @@ include('../functions.php');
 
                     <div class="article">
                         <a href="#" class="article_image">
-                            <img class="article_img" src="../image/kershaw_throw.jpg">
+                            <img class="article_img" src="../image/kershaw_throw.min.jpg">
                         </a>
                         <div class="article_main">
                             <a class="article_link" href="#">
@@ -127,7 +127,7 @@ include('../functions.php');
 
                     <div class="article">
                         <a href="#" class="article_image">
-                            <img class="article_img" src="../image/nolan.jpg">
+                            <img class="article_img" src="../image/nolan.min.jpg">
                         </a>
                         <div class="article_main">
                             <a class="article_link" href="#">
@@ -140,7 +140,7 @@ include('../functions.php');
 
                     <div class="article">
                         <a href="#" class="article_image">
-                            <img class="article_img" src="../image/bonds.jpg">
+                            <img class="article_img" src="../image/bonds.min.jpg">
                         </a>
                         <div class="article_main">
                             <a class="article_link" href="#">

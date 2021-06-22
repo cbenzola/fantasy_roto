@@ -56,11 +56,11 @@ include('../functions.php');
 	 <div class="player-row player-row-core">
 	 <div class="player">
 
-		<img src="../image/aaron.jpg" alt="judgeswing" class="action img-rounded" id="judge" usemap="#playerMap">
+		<img src="../image/aaron.min.jpg" alt="judgeswing" class="action img-rounded" id="judge" usemap="#playerMap">
 					<map name="playerMap">
   <area shape="poly" coords="0,0, 1019,5, 1019,679, 2,679" alt="judge" href="id_search.php?playerID=judgeaa01">
 </map>
-					 <img class="head" src="../image/judge.png" alt="aaron" />
+					 <img class="head" src="../image/judge.min.png" alt="aaron" />
 					 <div class="player-name">
 						 <?php  while ($results2 = mysqli_fetch_assoc($result2)) {
               echo '<a href="id_search.php?playerID='.$results2["playerID"].'">';
@@ -70,11 +70,11 @@ include('../functions.php');
 
 		 <div class="player">
 
-    <img src="../image/mike-trout-angels.jpg" alt="troutswing" class="action img-rounded" usemap="#playerMap2">
+    <img src="../image/mike-trout-angels.min.jpg" alt="troutswing" class="action img-rounded" usemap="#playerMap2">
 					<map name="playerMap2">
 	<area shape="poly" coords="0,0, 1200,4, 1200,673, 0,673" alt="trout" href="id_search.php?playerID=troutmi01">
 </map>
-		<img class="head" src="../image/trout_head.jpg" alt="trout_head" />
+		<img class="head" src="../image/trout_head.min.jpg" alt="trout_head" />
 
         <div class="player-name">
 		<?php  while ($results = mysqli_fetch_assoc($result)) {
@@ -86,11 +86,11 @@ include('../functions.php');
 		 </div>
 
 		 <div class="player">
-		 <img src="../image/mookie_swing.jpg" alt="mookie_swing" class="action img-rounded img" usemap="#playerMap3">
+		 <img src="../image/mookie_swing.min.jpg" alt="mookie_swing" class="action img-rounded img" usemap="#playerMap3">
 					<map name="playerMap3">
 	<area shape="poly" coords="0,0, 400,0, 400,220, 0,224" alt="mookie" href="id_search.php?playerID=bettsmo01">
 </map>
-		<img class="head" src="../image/mookie_head.jpg" alt="mookie_head" />
+		<img class="head" src="../image/mookie_head.min.jpg" alt="mookie_head" />
 			 <div class="player-name">
          <?php  while ($results3 = mysqli_fetch_assoc($result3)) {
               echo '<a href="id_search.php?playerID='.$results3["playerID"].'">';
@@ -100,12 +100,12 @@ include('../functions.php');
 		 </div>
 
 		 <div class="player">
-		 <img src="../image/kershaw_throw.jpg" alt="kershaw_throw" class="action img-rounded img"
+		 <img src="../image/kershaw_throw.min.jpg" alt="kershaw_throw" class="action img-rounded img"
 					usemap="#playerMap4">
 					<map name="playerMap4">
 	<area shape="poly" coords="0,0, 400,0, 400,225, 0,225" alt="kersh" href="id_search-pitcher.php?playerID=kershcl01">
 </map>
-		<img class="head" src="../image/kershaw_head.jpg" alt="kershaw_head" />
+		<img class="head" src="../image/kershaw_head.min.jpg" alt="kershaw_head" />
 			 <div class="player-name">
          <?php  while ($results4 = mysqli_fetch_assoc($result4)) {
               echo '<a href="id_search-pitcher.php?playerID='.$results4["playerID"].'">';
@@ -117,12 +117,12 @@ include('../functions.php');
 
 
 		 <div class="player ">
-			<img src="../image/cole.jpg" alt="cole_throw" class="action img-rounded img"
+			<img src="../image/cole.min.jpg" alt="cole_throw" class="action img-rounded img"
 					usemap="#playerMap5">
 					<map name="playerMap5">
 	<area shape="poly" coords="0,0, 1200,0, 1200,800, 0,800" alt="cole" href="id_search-pitcher.php?playerID=colege01">
 </map>
-		<img class="head" src="../image/cole_head.png" alt="cole_head" />
+		<img class="head" src="../image/cole_head.min.png" alt="cole_head" />
 			 <div class="player-name">
          <?php  while ($results5 = mysqli_fetch_assoc($result5)) {
               echo '<a href="id_search-pitcher.php?playerID='.$results5["playerID"].'">';
@@ -133,12 +133,12 @@ include('../functions.php');
 
 
 		  <div class="player">
-		 	<img src="../image/degrom.jpg" alt="degrom_throw" class="action img-rounded img"
+		 	<img src="../image/degrom.min.jpg" alt="degrom_throw" class="action img-rounded img"
 					usemap="#playerMap6">
 					<map name="playerMap6">
 	<area shape="poly" coords="0,0, 1279,0, 1279,852, 0,852" alt="grom" href="id_search-pitcher.php?playerID=degroja01">
 </map>
-		<img class="head" src="../image/degrom_head.png" alt="degrom_head" />
+		<img class="head" src="../image/degrom_head.min.png" alt="degrom_head" />
 			 <div class="player-name">
          <?php  while ($results6 = mysqli_fetch_assoc($result6)) {
               echo '<a href="id_search-pitcher.php?playerID='.$results6["playerID"].'">';
@@ -182,7 +182,7 @@ include('../functions.php');
 					            <img class="table-team-logo" src="https://www.mlbstatic.com/team-logos/158.svg">
 					          </div>
 					          <div>
-					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.png';" src="https://content.mlb.com/images/headshots/current/60x60/642207.png">
+					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.min.png';" src="https://content.mlb.com/images/headshots/current/60x60/642207.png">
 					            <span><a href="#">Williams, Devin</a></span>
 					          </div>
 					          <div class="performance-stat">
@@ -192,7 +192,7 @@ include('../functions.php');
 					            <img class="table-team-logo" src="https://www.mlbstatic.com/team-logos/114.svg">
 					          </div>
 					          <div>
-					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.png';" src="https://content.mlb.com/images/headshots/current/60x60/675916.png">
+					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.min.png';" src="https://content.mlb.com/images/headshots/current/60x60/675916.png">
 					            <span><a href="#">Karinchak, James</a></span>
 					          </div>
 					          <div class="performance-stat">
@@ -202,7 +202,7 @@ include('../functions.php');
 					            <img class="table-team-logo" src="https://www.mlbstatic.com/team-logos/113.svg">
 					          </div>
 					          <div>
-					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.png';" src="https://content.mlb.com/images/headshots/current/60x60/608371.png">
+					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.min.png';" src="https://content.mlb.com/images/headshots/current/60x60/608371.png">
 					            <span><a href="#">Sims, Lucas</a></span>
 					          </div>
 					          <div class="performance-stat">
@@ -212,7 +212,7 @@ include('../functions.php');
 					            <img class="table-team-logo" src="https://www.mlbstatic.com/team-logos/119.svg">
 					          </div>
 					          <div>
-					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.png';" src="https://content.mlb.com/images/headshots/current/60x60/624647.png">
+					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.min.png';" src="https://content.mlb.com/images/headshots/current/60x60/624647.png">
 					            <span><a href="#">Gonzalez, Victor</a></span>
 					          </div>
 					          <div class="performance-stat">
@@ -222,7 +222,7 @@ include('../functions.php');
 					            <img class="table-team-logo" src="https://www.mlbstatic.com/team-logos/121.svg">
 					          </div>
 					          <div>
-					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.png';" src="https://content.mlb.com/images/headshots/current/60x60/621242.png">
+					            <img class="player-mug" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic.min.png';" src="https://content.mlb.com/images/headshots/current/60x60/621242.png">
 					            <span><a href="#">Diaz, Edwin</a></span>
 					          </div>
 					          <div class="performance-stat">

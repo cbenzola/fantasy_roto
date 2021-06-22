@@ -1,0 +1,60 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ab307e",
+        "activityBar.activeBorder": "#25320e",
+        "activityBar.background": "#ab307e",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#25320e",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#832561",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#ab307e",
+        "titleBar.activeBackground": "#832561",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#83256199",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "[BeardedTheme Arc Eggplant]": {
+            "editor.background": "#0d0c0a",
+            "sideBar.background": "#0d0c0a",
+            "editorGutter.background": "#0d0c0a"
+        },
+        "[BeardedTheme Arc Blueberry]": {
+            "editor.background": "#121624",
+            "sideBar.background": "#121624",
+            "editorGutter.background": "#121624"
+        },
+        "[BeardedTheme Surprising Blueberry]": {
+            "editor.background": "#0d0c0a",
+            "sideBar.background": "#0d0c0a",
+            "editorGutter.background": "#0d0c0a"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "source.python",
+                "settings":
+                    {
+                    "foreground": "#ef738a",
+                    }
+           },
+           {
+               "scope":"comment",
+               "settings": {
+                   "foreground": "#A8A8A8",
+                   "fontStyle": "italic"
+               }
+           }
+           
+           
+        ]
+      },
+    "peacock.color": "#832561",
+    "python.pythonPath": "C:\\Users\\Chris\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "optimizeImages.app": "imagecompressor.com",
+    "tinypng.apiKey": "KLzklZjppkLwBJrwSFCZ6gy8CpPjwj6j"
+    
+     
+      
+}
